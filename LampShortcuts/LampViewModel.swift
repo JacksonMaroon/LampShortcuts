@@ -156,6 +156,30 @@ final class LampViewModel: ObservableObject {
         }
     }
 
+    func toggleIntensity() {
+        Task { @MainActor in
+            do {
+                let id = try store.requireID()
+                let lastHSV = store.loadHSV()
+                let hue = lastHSV?.h ?? 0
+                let saturation = lastHSV?.s ?? 0
+                let currentValue = lastHSV?.v ?? 100
+                let targetValue = currentValue >= 75 ? 50 : 100
+                let sequence = [
+                    LampCommands.power(on: true),
+                    LampCommands.color(h: hue, s: saturation, v: targetValue)
+                ]
+                try await manager.sendSequence(sequence, to: id)
+                store.savePowerState(isOn: true)
+                store.saveHSV(h: hue, s: saturation, v: targetValue)
+                brightness = Double(targetValue)
+                statusMessage = "Brightness set to \(targetValue)%."
+            } catch {
+                statusMessage = error.localizedDescription
+            }
+        }
+    }
+
     func sendColor() {
         Task { @MainActor in
             do {
