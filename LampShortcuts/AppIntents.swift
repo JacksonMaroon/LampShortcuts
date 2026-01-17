@@ -48,6 +48,30 @@ struct LampToggleIntent: AppIntent {
     }
 }
 
+struct LampToggleIntensityIntent: AppIntent {
+    static var title: LocalizedStringResource = "Toggle Lamp Intensity"
+    static var description = IntentDescription("Toggle lamp brightness between 50% and 100%.")
+    static var openAppWhenRun = false
+
+    func perform() async throws -> some IntentResult & ProvidesDialog {
+        let store = LampDeviceStore.shared
+        let id = try store.requireID()
+        let lastHSV = store.loadHSV()
+        let hue = lastHSV?.h ?? 0
+        let saturation = lastHSV?.s ?? 0
+        let currentValue = lastHSV?.v ?? 100
+        let targetValue = currentValue >= 75 ? 50 : 100
+        let sequence = [
+            LampCommands.power(on: true),
+            LampCommands.color(h: hue, s: saturation, v: targetValue)
+        ]
+        try await LampBLEManager.shared.sendSequence(sequence, to: id)
+        store.savePowerState(isOn: true)
+        store.saveHSV(h: hue, s: saturation, v: targetValue)
+        return .result(dialog: IntentDialog("Brightness set to \(targetValue)%."))
+    }
+}
+
 struct LampSetBrightnessIntent: AppIntent {
     static var title: LocalizedStringResource = "Set Lamp Brightness"
     static var description = IntentDescription("Set the lamp brightness.")
@@ -164,6 +188,13 @@ struct LampShortcutsProvider: AppShortcutsProvider {
             phrases: [
                 "Toggle \(.applicationName) lamp",
                 "\(.applicationName) lamp toggle power"
+            ]
+        )
+        AppShortcut(
+            intent: LampToggleIntensityIntent(),
+            phrases: [
+                "Toggle \(.applicationName) lamp intensity",
+                "\(.applicationName) lamp brightness toggle"
             ]
         )
         AppShortcut(

@@ -53,6 +53,9 @@ struct ContentView: View {
                             .font(.footnote)
                             .foregroundColor(.secondary)
                     }
+                    Button("Toggle Intensity (50/100)") {
+                        model.toggleIntensity()
+                    }
                     Button("Set Brightness") {
                         model.sendBrightness()
                     }
