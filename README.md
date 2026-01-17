@@ -83,6 +83,8 @@ A native Swift app that:
 3. Select your lamp from the list
 4. Done - Siri Shortcuts now work
 
+Once configured, you can add the shortcuts to Control Center and Apple Watch via the Shortcuts app.
+
 ## Compatibility
 
 Tested with generic BLE RGB lamps using the Tuya/Smart Life protocol. Should work with any lamp advertising:
@@ -100,8 +102,6 @@ Tested with generic BLE RGB lamps using the Tuya/Smart Life protocol. Should wor
 ## Future Ideas
 
 - [ ] macOS menu bar app
-- [ ] iOS Control Center widget (iOS 18)
-- [ ] Apple Watch complication
 - [ ] HomeKit bridge (expose as HomeKit accessory)
 
 ---
