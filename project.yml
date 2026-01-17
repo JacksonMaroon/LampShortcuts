@@ -1,0 +1,32 @@
+name: LampShortcuts
+options:
+  bundleIdPrefix: com.jacksonmaroon
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  LampShortcuts:
+    type: application
+    platform: iOS
+    sources:
+      - LampShortcuts
+    info:
+      path: LampShortcuts/Info.plist
+      properties:
+        CFBundleDisplayName: Lamp Shortcuts
+        NSBluetoothAlwaysUsageDescription: This app uses Bluetooth to control your lamp.
+        NSBluetoothPeripheralUsageDescription: This app uses Bluetooth to control your lamp.
+        UIBackgroundModes:
+          - bluetooth-central
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jacksonmaroon.LampShortcuts
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: 1,2

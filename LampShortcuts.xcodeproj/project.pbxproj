@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1569C6B09E77C731FBD89753 /* LampBLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349985CB9694D10153CB05BF /* LampBLEManager.swift */; };
+		2A4B307A30670272389D6108 /* LampErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71E0C0585FFB3BAB975200 /* LampErrors.swift */; };
+		4ADC0CDC56571C26783BBA5E /* LampCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3BFED4E62493873A84B77 /* LampCommands.swift */; };
+		59A79EB1F71EB95C595FD30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EAC6D04010CD1BCDFACE9E1 /* Assets.xcassets */; };
+		7F53201F2710C175A91847EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9871707835EF451CED6048D /* ContentView.swift */; };
+		90927A4589A185DF19EE7BB5 /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F69C097EBCF815FCC8E648 /* AppIntents.swift */; };
+		A5E3450E8AC2F483E34D4B66 /* LampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE86A2FD9A946BFA4E734A71 /* LampViewModel.swift */; };
+		D246BEDEBE5D22C9BB2DAFD7 /* LampShortcutsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCE87231ADE134B99489DA /* LampShortcutsApp.swift */; };
+		F3143E11C1030DDB140E4D7A /* LampDeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C8FCE0A71451133740BF3 /* LampDeviceStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		349985CB9694D10153CB05BF /* LampBLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampBLEManager.swift; sourceTree = "<group>"; };
+		40DCE87231ADE134B99489DA /* LampShortcutsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampShortcutsApp.swift; sourceTree = "<group>"; };
+		52A3BFED4E62493873A84B77 /* LampCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampCommands.swift; sourceTree = "<group>"; };
+		5EAC6D04010CD1BCDFACE9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70F69C097EBCF815FCC8E648 /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
+		B74C8FCE0A71451133740BF3 /* LampDeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampDeviceStore.swift; sourceTree = "<group>"; };
+		B9871707835EF451CED6048D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA71E0C0585FFB3BAB975200 /* LampErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampErrors.swift; sourceTree = "<group>"; };
+		D23E98D0EB375D3C5BA513A4 /* LampShortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LampShortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE86A2FD9A946BFA4E734A71 /* LampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampViewModel.swift; sourceTree = "<group>"; };
+		F70B629055F7F1DEA3C3B651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4CFA83316A2A37D204524CC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D23E98D0EB375D3C5BA513A4 /* LampShortcuts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B9BAE9C6A82F8ADBBD3B327 /* LampShortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				70F69C097EBCF815FCC8E648 /* AppIntents.swift */,
+				5EAC6D04010CD1BCDFACE9E1 /* Assets.xcassets */,
+				B9871707835EF451CED6048D /* ContentView.swift */,
+				F70B629055F7F1DEA3C3B651 /* Info.plist */,
+				349985CB9694D10153CB05BF /* LampBLEManager.swift */,
+				52A3BFED4E62493873A84B77 /* LampCommands.swift */,
+				B74C8FCE0A71451133740BF3 /* LampDeviceStore.swift */,
+				BA71E0C0585FFB3BAB975200 /* LampErrors.swift */,
+				40DCE87231ADE134B99489DA /* LampShortcutsApp.swift */,
+				EE86A2FD9A946BFA4E734A71 /* LampViewModel.swift */,
+			);
+			path = LampShortcuts;
+			sourceTree = "<group>";
+		};
+		D4DD2B45ED3B9A9213A724FE = {
+			isa = PBXGroup;
+			children = (
+				9B9BAE9C6A82F8ADBBD3B327 /* LampShortcuts */,
+				4CFA83316A2A37D204524CC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CBDCFA917531E1003DD32FE /* LampShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A15AD56B28C90E239E0E92 /* Build configuration list for PBXNativeTarget "LampShortcuts" */;
+			buildPhases = (
+				DDF17954EB11D3283983556B /* Sources */,
+				8ED0615ECBBAE3B32F5F4D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LampShortcuts;
+			packageProductDependencies = (
+			);
+			productName = LampShortcuts;
+			productReference = D23E98D0EB375D3C5BA513A4 /* LampShortcuts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104BC61BA488AEDA0B7E6A45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5CBDCFA917531E1003DD32FE = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A3E08C0CA031221F444066B6 /* Build configuration list for PBXProject "LampShortcuts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D4DD2B45ED3B9A9213A724FE;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CBDCFA917531E1003DD32FE /* LampShortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ED0615ECBBAE3B32F5F4D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A79EB1F71EB95C595FD30F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDF17954EB11D3283983556B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90927A4589A185DF19EE7BB5 /* AppIntents.swift in Sources */,
+				7F53201F2710C175A91847EF /* ContentView.swift in Sources */,
+				1569C6B09E77C731FBD89753 /* LampBLEManager.swift in Sources */,
+				4ADC0CDC56571C26783BBA5E /* LampCommands.swift in Sources */,
+				F3143E11C1030DDB140E4D7A /* LampDeviceStore.swift in Sources */,
+				2A4B307A30670272389D6108 /* LampErrors.swift in Sources */,
+				D246BEDEBE5D22C9BB2DAFD7 /* LampShortcutsApp.swift in Sources */,
+				A5E3450E8AC2F483E34D4B66 /* LampViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3CCF6A858179D39BADB0C14F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 82GR2SK3HV;
+				INFOPLIST_FILE = LampShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacksonmaroon.LampShortcuts;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A770565EF8637034E5EF5513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DCDCC5166E943AA1E37E5AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F62056D10B49AB484404F4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LampShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacksonmaroon.LampShortcuts;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56A15AD56B28C90E239E0E92 /* Build configuration list for PBXNativeTarget "LampShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCF6A858179D39BADB0C14F /* Debug */,
+				F62056D10B49AB484404F4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3E08C0CA031221F444066B6 /* Build configuration list for PBXProject "LampShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDCC5166E943AA1E37E5AB5 /* Debug */,
+				A770565EF8637034E5EF5513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 104BC61BA488AEDA0B7E6A45 /* Project object */;
+}
