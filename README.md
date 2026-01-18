@@ -101,7 +101,7 @@ Tested with generic BLE RGB lamps using the Tuya/Smart Life protocol. Should wor
 
 ## Future Ideas
 
-- [ ] macOS menu bar app
+- [x] macOS menu bar app → [LampMenuBar](https://github.com/JacksonMaroon/LampMenuBar)
 - [ ] HomeKit bridge (expose as HomeKit accessory)
 
 ---
